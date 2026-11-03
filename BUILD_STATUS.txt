@@ -1,0 +1,15 @@
+Build-Prüfung: 03.11.2026
+Toolchain: arm-none-eabi-gcc.exe (GNU Tools for STM32 12.3.rel1.20240612-1315) 12.3.1 20230626
+
+Debug: 8 Quelldateien; 0 Compile-Fehler; Linken erfolgreich; 4 Compiler-/Linker-Warnungen.
+firmware/pwr7_stop_rtc\Core\Src\X_stm32f1xx_system.c:9:22: warning: comparison of integer expressions of different signedness: 'int' and 'unsigned int' [-Wsign-compare]
+firmware/pwr7_stop_rtc\Core\Src\X_stm32f1xx_system.c:10:30: warning: comparison of integer expressions of different signedness: 'int' and 'unsigned int' [-Wsign-compare]
+firmware/pwr7_stop_rtc\Core\Src\X_stm32f1xx_system.c:307:16: warning: unused parameter 'file' [-Wunused-parameter]
+ld: warning: build\stm32-low-power-rtc\Debug\firmware.elf has a LOAD segment with RWX permissions
+Release: 8 Quelldateien; 0 Compile-Fehler; Linken erfolgreich; 4 Compiler-/Linker-Warnungen.
+firmware/pwr7_stop_rtc\Core\Src\X_stm32f1xx_system.c:9:22: warning: comparison of integer expressions of different signedness: 'int' and 'unsigned int' [-Wsign-compare]
+firmware/pwr7_stop_rtc\Core\Src\X_stm32f1xx_system.c:10:30: warning: comparison of integer expressions of different signedness: 'int' and 'unsigned int' [-Wsign-compare]
+firmware/pwr7_stop_rtc\Core\Src\X_stm32f1xx_system.c:307:16: warning: unused parameter 'file' [-Wunused-parameter]
+ld: warning: build\stm32-low-power-rtc\Release\firmware.elf has a LOAD segment with RWX permissions
+
+Prüfung direkt mit Arm-GCC aus der installierten STM32CubeIDE-Toolchain, nicht durch einen IDE-Import. Die IDE-Projektdateien wurden als XML geprüft; vollständiger IDE-Import/Build noch offen. Keine Hardwaretests oder Flash-Vorgänge. Warnungen und dokumentierte Funktionsfehler sind noch zu bearbeiten.
